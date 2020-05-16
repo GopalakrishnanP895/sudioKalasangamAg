@@ -1,0 +1,68 @@
+.contact {
+    padding: 10rem 0;
+    &-card {
+        background-size: cover;
+        height: 50rem;
+        border-radius: 3px;
+        box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
+    }
+
+    &-gradient {
+        background-image: linear-gradient(105deg, rgba(33, 150, 243, 0.69) 0%, rgba(63, 81, 181, 0.72) 50%, transparent 50%);
+        height: 100%;
+        @media (max-width: 600px) {
+            background-image: linear-gradient(105deg, rgba(33, 150, 243, 0.69) 0%, rgba(63, 81, 181, 0.72) 100%, transparent 100%);
+        }
+    }
+
+    &-form {
+        width: 50%;
+        padding: 6rem;
+
+        @media (max-width: 600px) {
+            width: 100%;
+        }
+    }
+}
+
+.form-control {
+    font-size: 1.5rem;
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    background-color: #fff;
+    border-bottom: 3px solid transparent;
+    border: none;
+    width: 90%;
+    display: block;
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 1rem 2rem rgba(#000, .1);
+        border-bottom: 3px solid blue;
+    }
+
+    &:focus:invalid {
+        border-bottom: 3px solid orangered;
+    }
+
+    &::-webkit-input-placeholder {
+        color: #000;
+    }
+
+}
+
+.form-control:placeholder-shown + .form-label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+}
+
+.form-label {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    color: #fff;
+    display: block;
+    transition: all .3s;
+}

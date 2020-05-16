@@ -1,0 +1,18 @@
+.social-wrapper {
+    margin-top: 3rem;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .social-media-img  {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border-bottom-left-radius: 0;
+
+        &:hover {
+            animation: pulse 2s ease-in-out;
+        }
+    }
+}

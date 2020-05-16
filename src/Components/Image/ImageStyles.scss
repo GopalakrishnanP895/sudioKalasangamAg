@@ -1,0 +1,12 @@
+.wrapper--img {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    .img-resp {
+        border-radius: 16px;
+        object-fit: cover;
+        max-width: 50rem;
+        width: 100%;
+        box-shadow: 8px 11px 14px #795548;
+    }
+}

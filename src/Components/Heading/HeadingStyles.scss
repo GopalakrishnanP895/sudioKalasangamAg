@@ -1,0 +1,108 @@
+.primary--heading {
+    text-align: center;
+    color: #000;
+    display: inline-block;
+    padding: 1.5rem 7rem;
+    background: #f9754e;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    margin-bottom: 10rem;
+
+    h2 {
+        font-family: 'Calistoga', cursive;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 4.5rem;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        align-items: center;
+        color: #fff;
+        
+        @media (max-width: 600px) {
+            font-size: 3rem;
+        }
+    }
+}
+
+.secondary-heading {
+    text-align: center;
+    margin-bottom: 5rem;
+
+    h2 {
+        font-size: 2.5rem;
+        line-height: 1.6;
+        margin: 2rem;
+        
+        &::before {
+            content: '\201C';
+            font-size: 50px;
+            position: relative;
+            color: #ff9800;
+            line-height: 20px;
+            bottom: -4px;
+            right: 5px;
+        }
+
+        &::after {
+            content: '\201D';
+            font-size: 50px;
+            position: relative;
+            color: #ff9800;
+            line-height: 20px;
+            top: 15px;
+            left: 5px;
+        }
+    }
+}
+
+.secondary-button {
+    margin: 5rem 0;
+
+    a {
+        padding: 2rem 2.5rem;
+        font-size: 2rem;
+        font-weight: 800;
+        border-radius: 50px;
+        background-color: #a2d9ff;
+        border-color: #a2d9ff;
+        outline: none;
+        box-shadow:  20px 20px 60px #8ab8d9, 
+             -20px -20px 60px #bafaff;
+             transform: translateY(0);
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            background-color: #87c1eb;
+            transform: translateY(-5px);
+            border-color: #87c1eb;
+            box-shadow:  20px 20px 50px #8ab8d9, 
+             -20px -20px 50px #bafaff;
+        }
+
+        &:active {
+            transform: translateY(8px);
+            background-color: #a2d9ff !important;
+            border-color: #a2d9ff !important;
+        }
+    }
+}
+
+.owl-next,.owl-prev {
+    transform: translateY(0);
+    transition: all .4s ease-in-out;
+
+    &:active {
+        transform: translateY(8px);
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.fa-arrow-right,.fa-arrow-left {
+    transition: all .3s ease-in-out;
+    &:hover {
+        background-color: #87c1eb !important;
+        border-color: #87c1eb !important;
+    }
+}

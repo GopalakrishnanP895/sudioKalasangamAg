@@ -1,0 +1,70 @@
+.home {
+    margin-top: -4rem;
+}
+
+.carousel-item {
+    height: 100vh;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    h5 {
+        font-size: 4rem;
+    }
+
+    .carousel-caption {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        bottom: unset;
+
+        .mobile {
+            width: 75%;
+            &_heading {
+                font-size: 2rem;
+                background-image: linear-gradient(to right bottom, rgba(255, 160, 41, 0.85), rgba(218, 96, 25, 0.85));
+                color: #fff;
+                padding: 0.4rem 1.5rem;
+            }
+        }
+
+        a {
+            color: #fff;
+            background-color: #f9754e;
+        }
+    }
+
+    @media only screen and (max-width: 37.5em) { 
+        height: 40vh;
+    }
+
+    // &:nth-child(1) {
+    //     background: linear-gradient(to right bottom, rgba(45, 224, 125, 0.4), rgba(222, 23, 23, 0.4)), url(../img/picsforkalasangamag/10.jpg);
+    //     -webkit-background-size: cover;
+    //     -moz-background-size: cover;
+    //     -o-background-size: cover;
+    //     background-size: cover;
+    //     background-position: center;
+    // }
+
+    // &:nth-child(2) {
+    //     background: linear-gradient(to right bottom, rgba(45, 224, 125, 0.4), rgba(222, 23, 23, 0.4)), url(../img/picsforkalasangamag/12.jpg);
+    //     -webkit-background-size: cover;
+    //     -moz-background-size: cover;
+    //     -o-background-size: cover;
+    //     background-size: cover;
+    //     background-position: center;
+    // }
+
+    // &:nth-child(3) {
+    //     background: linear-gradient(to right bottom, rgba(45, 224, 125, 0.4), rgba(222, 23, 23, 0.4)), url(../img/picsforkalasangamag/1..jpg);
+    //     -webkit-background-size: cover;
+    //     -moz-background-size: cover;
+    //     -o-background-size: cover;
+    //     background-size: cover;
+    //     background-position: top;
+    // }
+
+  }

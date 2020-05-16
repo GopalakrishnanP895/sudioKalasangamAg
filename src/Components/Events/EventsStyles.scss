@@ -1,0 +1,92 @@
+.events {
+    
+
+    &-wrapper {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Noto Serif', serif;
+        justify-content: center;
+        align-items: self-start;
+        padding: 5rem;
+
+        &--name {
+
+            h4 {
+                font-size: 4rem;
+                width: 75%;
+                font-weight: 700;
+                letter-spacing: 5px;
+                color: #FF3E41;
+                text-transform: uppercase;
+            }
+        }
+
+        &--time {
+            p {
+                font-size: 2rem;
+                font-style: italic;
+                font-weight: 700;
+                color: #417343
+            }
+        }
+
+        &--location {
+            p {
+                font-size: 2rem;
+                font-style: italic;
+                font-weight: 700;
+                color: #417343
+            }
+        }
+
+        &--description {
+            p {
+                font-size: 3rem;
+                font-family: 'Gabriela', serif;
+                font-style: italic;
+                font-weight: 400;
+                color: #000;
+            }
+        }
+
+        &--join {
+            button {
+                font-size: 1.5rem;
+                padding: 1rem 3rem;
+            }
+        }
+    }
+
+    .owl-carousel {
+        position: relative;
+    }
+
+    .owl-next,.owl-prev {
+        border-radius: 50%;
+    }
+
+    .owl-theme .owl-nav [class*='owl-']:hover {
+        background: transparent;
+    }
+
+    .owl-nav {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 44%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+
+    .fa-arrow-right,.fa-arrow-left {
+        transition: all .3s ease-in-out;
+        &:hover {
+            background-color: #000 !important;
+            border-color: #fff !important;
+        }
+    }
+}

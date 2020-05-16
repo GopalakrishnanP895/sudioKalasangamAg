@@ -1,0 +1,53 @@
+.album {
+    padding: 10rem 0;
+    text-align: center;
+}
+
+.gallery {
+    column-count: 4;
+    column-gap: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+
+    img {
+        width: 100%; 
+        height: auto;
+        transition: 500ms;
+        margin-bottom: 10px;
+        opacity: 0.8;
+        page-break-inside: avoid; 
+        break-inside: avoid; 
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+	.gallery { 
+        column-count: 3;
+    }
+	.gallery img {
+        margin: 0; 
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .gallery { 
+        column-count: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .gallery img { 
+        margin: 0 0.5rem; 
+        width: 135px;
+    }
+}
+
+.lb-data .lb-close {
+    background: url(https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/images/close.png) top right no-repeat;
+}

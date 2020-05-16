@@ -1,0 +1,17 @@
+.about {
+    padding: 10rem 0;
+    text-align: center;
+    background-color: #a2d9ff;
+    
+    &-wrapper {
+        display: grid;
+        justify-content: center;
+        align-items: flex-start;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3rem;
+
+        @media (max-width: 600px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
