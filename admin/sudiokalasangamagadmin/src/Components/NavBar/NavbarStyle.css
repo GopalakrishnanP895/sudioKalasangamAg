@@ -1,0 +1,11 @@
+nav{
+    box-shadow: 0 0 5px #9c9b9b;
+}
+.hamburger-menu{
+    color: #49a249;
+    padding: 1rem;
+}
+
+.hamburger-menu i{
+    font-size: 2rem;
+}

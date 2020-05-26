@@ -1,0 +1,111 @@
+.sidebar{
+    background-color: #ffffff;
+    width: 20%;
+    height: 100%;
+    min-height: 100vh;
+    box-shadow: 0 3px 8px #9c9b9b;
+    transition: all .5s ease-in-out;
+}
+.sidebar-hide{
+    margin-left: -20%;
+}
+
+.sidebar-active{
+    margin-left: 0;
+}
+
+.user-info{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.user-image{
+    margin-top: 12px;
+    width: 100px;
+    box-shadow: 3px 3px 10px #8c8686;
+    border-radius: 50%;
+}
+
+.user-image > img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.user-info p:nth-child(2){
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-top: 3px;
+}
+
+.user-info p:nth-child(3){
+    font-weight: 800;
+}
+
+.menu-list > .list-item a{
+    display: block;
+    color: #000000;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-left: 5px solid transparent;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+
+.menu-list > .list-item a:hover, .menu-list > .list-item a.active{
+    border-left: 5px solid #49a249;
+    background-color: #e8ffec;
+    color: #49a249;
+}
+
+.menu-list > .list-item a span{
+    margin-left: 20px;
+}
+
+.my-account p{
+    font-weight: 800;
+}
+
+.sidebar,.right-side{
+    float: left;
+}
+
+.w-80{
+    width: 80%;
+}
+
+.w-100{
+    width: 100%;
+}
+
+@media only screen and ( max-width : 768px){
+
+    .sidebar{
+        width : 30%;
+    }
+
+    .sidebar-hide{
+        margin-left: -30%;
+    }
+    
+    .w-80{
+        width: 70%;
+    }
+
+    .user-image{
+        width: 50px;
+    }
+    
+    .user-image > img{
+        width: 50px;
+        height: 50px;
+    }
+}
